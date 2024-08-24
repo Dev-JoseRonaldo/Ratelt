@@ -7,10 +7,13 @@
     "plugin:tailwindcss/recommended",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "ignorePatterns": ["*.config.js"],
+  "ignorePatterns": [
+    "*.config.js"
+  ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
