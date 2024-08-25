@@ -66,7 +66,7 @@ const PricingCard = ({
           </span>
         </div>
       </CardHeader>
-      <CardContent className="relative pb-0">
+      <CardContent className="relative pb-0 pt-2">
         {tabs.length > 0 ? (
           <PricingTabs tabs={tabs} />
         ) : (
@@ -88,7 +88,7 @@ const PricingCard = ({
           )
         )}
         <div
-          className={`absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-white pointer-events-none ${featured && 'to-primary'}`}
+          className={`absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent pointer-events-none ${featured  ? '!to-primary border-4 border-primary' : 'to-white'}`}
         ></div>
       </CardContent>
       <CardFooter className={`flex flex-col ${featured && 'pb-5'}`}>
