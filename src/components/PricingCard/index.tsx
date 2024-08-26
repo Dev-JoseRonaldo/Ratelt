@@ -88,7 +88,7 @@ const PricingCard = ({
           )
         )}
         <div
-          className={`absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent pointer-events-none ${featured  ? '!to-primary border-4 border-primary' : 'to-white'}`}
+          className={`absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent pointer-events-none ${featured ? '!to-primary border-4 border-primary' : 'to-white'}`}
         ></div>
       </CardContent>
       <CardFooter className={`flex flex-col ${featured && 'pb-5'}`}>
