@@ -42,6 +42,7 @@ function Calendar({
             ? "[&:has(>.day-range-end)]:rounded-r-md [&:has(>.day-range-start)]:rounded-l-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md"
             : "[&:has([aria-selected])]:rounded-md"
         ),
+        day:  buttonVariants({ variant: "ghost" }),
         day_range_start: "day-range-start",
         day_range_end: "day-range-end",
         day_selected:
