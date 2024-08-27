@@ -11,13 +11,13 @@ import { DotFilledIcon, ExitIcon, GearIcon } from '@radix-ui/react-icons';
 
 export default function Header() {
   return (
-    <div className="fixed left-0 right-0 top-0 z-20 bg-white md:ml-72">
+    <div className="fixed left-0 right-0 top-0 z-20 bg-white md:ml-72 px-4 pt-1">
       <nav className="flex h-16 md:h-[140px] items-center justify-between">
         <div className={cn('md:!hidden w-full flex')}>
           <MobileSidebar />
         </div>
 
-        <div className="hidden md:flex items-center justify-center gap-14 w-full px-24">
+        <div className="hidden md:flex items-center justify-center gap-4 lg:gap-14 w-full lg:px-12 xl:px-24">
           <SearchInput placeholder="Search" />
           <DatePickerInput />
           <Image
