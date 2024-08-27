@@ -12,7 +12,7 @@ export interface SearchInputProps
 const SearchInput = ({ title, placeholder,className, ...props }: SearchInputProps) => {
   return (
     <>
-      <div className="relative flex w-full max-w-lg items-center">
+      <div className="relative flex w-full items-center">
         <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-500/40 ml-2" />
         <Input
         className={cn('w-full py-2 pl-12 bg-[#F5F6FA] rounded-md shadow-sm border-transparent', className)}
