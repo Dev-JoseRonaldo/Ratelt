@@ -16,7 +16,6 @@ export const MobileSidebar = () => {
         <SheetTrigger asChild>
           <div className="w-full flex items-center justify-between gap-2">
             <Hamburger toggled={open} toggle={setOpen}/>{' '}
-            <Logo size='medium'/>
           </div>
         </SheetTrigger>
         <SheetContent

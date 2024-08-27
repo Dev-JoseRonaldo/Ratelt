@@ -1,6 +1,9 @@
 import { cn } from '@/lib/utils';
 import { MobileSidebar } from '@/components/LayoutSidebar/Mobile-sidebar';
 import SearchInput from '../SearchInput';
+import DatePickerInput from '../DatePickerInput';
+import Image from 'next/image';
+import bellIcon from '../../../public/assets/notificationIcon.svg';
 
 export default function Header() {
   return (
@@ -11,7 +14,13 @@ export default function Header() {
         </div>
 
         <div className="hidden md:flex items-center justify-center gap-10 w-full">
-         
+          <SearchInput placeholder="Search" />
+          <DatePickerInput />
+          <Image
+            src={bellIcon}
+            alt="Bell icon"
+            className="w-44 md:w-auto cursor-pointer hover:scale-110"
+          />
         </div>
       </nav>
     </div>
