@@ -32,7 +32,7 @@ function Calendar({
         nav_button_previous: "absolute left-1",
         nav_button_next: "absolute right-1",
         table: "w-full border-collapse space-y-1",
-        head_row: "flex",
+        head_row: "flex justify-between px-2",
         head_cell:
           "text-muted-foreground rounded-md w-8 font-normal text-[0.8rem]",
         row: "flex w-full mt-2",
@@ -42,6 +42,7 @@ function Calendar({
             ? "[&:has(>.day-range-end)]:rounded-r-md [&:has(>.day-range-start)]:rounded-l-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md"
             : "[&:has([aria-selected])]:rounded-md"
         ),
+        day:  buttonVariants({ variant: "ghost" }),
         day_range_start: "day-range-start",
         day_range_end: "day-range-end",
         day_selected:
